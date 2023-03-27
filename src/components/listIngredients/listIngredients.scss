@@ -1,0 +1,119 @@
+.ingredients-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients-container {
+  height: 300px;
+  width: 90%;
+  //border: 1px solid rgb(230, 230, 230);
+   border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.ingredients-container::-webkit-scrollbar {
+  width: 8px;
+  background: none;
+}
+.ingredients-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(255, 196, 2);
+}
+.ingredients-title {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: rgb(238, 127, 0);
+  font-size: 20px;
+}
+.total-ingredients {
+  margin-top: 12%;
+  
+  span {
+    font-weight: bold;
+  }
+}
+.each-ingredient {
+  border-bottom: 1px solid rgb(255, 196, 2);
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.button-delete {
+  color: rgb(238, 127, 0);
+  font-size: 18px;
+  cursor: pointer;
+}
+.list-figure {
+  width: 40px;
+  height: 40px;
+}
+.list-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.pay-button{
+  color: rgb(238, 127, 0);
+  border: 1px solid rgb(238, 127, 0);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5%;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+
+  &:hover {
+    background-color: rgb(238, 127, 0);
+    color: white;
+  }
+}
+.pay-icon {
+  font-size: 20px;
+}
+.pay-link {
+  color: rgb(238, 127, 0);
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}
+.button-confirm {
+  color: rgb(238, 127, 0);
+  border: 1px solid rgb(238, 127, 0);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5%;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+
+  &:hover {
+    background-color: rgb(238, 127, 0);
+    color: white;
+  }
+}
+//Ingredients empty
+.section-ingredients-empty {
+  padding: 20% 20px 20px 20px;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  gap: 20px;
+}
+.empty-title {
+  color: rgb(185, 185, 185);
+  text-align: center;
+  font-size: 18px;
+}
+.empty-icon {
+  font-size: 35px;
+  color: rgb(185, 185, 185);
+}

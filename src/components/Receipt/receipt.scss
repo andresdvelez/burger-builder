@@ -1,0 +1,100 @@
+.receipt {
+  background-image: url(https://i.ibb.co/HFsBF0w/burger-1-1-min.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .back {
+    display: flex;
+    color: white;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 2%;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  &__info {
+    height: 500px;
+    width: 375px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(21, 5, 36);
+
+    & section {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & h1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      & div {
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+          height: 50px;
+        }
+      }
+
+      & table {
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+      }
+    }
+
+    & button {
+      height: 40px;
+      border-radius: 8px;
+      border: none;
+      background-color: #fea700;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fd7102;
+      }
+    }
+  }
+  .iconclose {
+    display: none;
+  }
+  .showclose {
+    display: block;
+    align-self: center;
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .pr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.backBtn {
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

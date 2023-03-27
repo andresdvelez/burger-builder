@@ -1,0 +1,34 @@
+.button-confirm {
+  display: flex;
+  color: rgb(238, 127, 0);
+  border: 1px solid rgb(238, 127, 0);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5%;
+  width: 90%;
+  margin-inline: 5%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  &:hover {
+    background-color: rgb(238, 127, 0);
+    color: rgb(255, 255, 255);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.smoke {
+  position: absolute;
+  width: 40vw;
+  @media (max-width: 768px) {
+    width: 50vw;
+  }
+
+  @media (max-width: 576px) {
+    width: 25rem;
+  }
+}

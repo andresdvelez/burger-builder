@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  border-bottom: 1px solid rgb(255, 196, 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20% 0 10%;
+  &__container {
+    display: flex;
+    align-items: center;
+
+  }
+  &__figure {
+    width: 20%;
+    height: 50%;
+    padding: 10px;
+  }
+  &__img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    &::first-letter {
+      color: rgb(255, 196, 2);
+      font-size: 1.6rem;
+    }
+  }
+  &__ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+
+    &__li {
+      cursor: pointer;
+      transition: 0.4;
+      text-decoration: none;
+      color: black;
+      text-decoration: none;
+      z-index: 99;
+    }
+  }
+}
+.activeBg {
+  background-color: rgb(255, 196, 2);
+  border-radius: 15px;
+  position: absolute;
+  height: 2.5rem;
+  width: 4rem;
+  z-index: -1;
+}
+.container-basket {
+  display: flex;
+  cursor: pointer
+}
+.noti{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ff2a2a;
+  border-radius: 50%;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  transform: translate(-5px, -7px);
+}
+.Basket-icon {
+  font-size: 28px;
+  color:rgb(255, 116, 2)
+}
+
+@media screen and (max-width: 525px) {
+  .nav {
+    padding:5%;
+  }
+.nav__figure {
+  margin-top: 5px;
+  width: 20%;
+  height: 50%;
+  padding: 0;
+}
+}
